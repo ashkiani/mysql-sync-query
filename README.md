@@ -14,7 +14,6 @@ Extends the mysql package to
 * Run command: npm install mysql-sync-query
 * Declare a variable/constant to require the installed package e.g. let db = require("mysql-sync-query");
 * The defined variable in the last step represents a class with a constructor that takes an existing database name. e.g. let databaseObject = new db("employees_db");
-* 
 
 ## Methods
 #### connectLocal
@@ -80,7 +79,5 @@ Node.js, MySQL
 Direct link to package: https://www.npmjs.com/package/mysql-sync-query
 ​
 ### License
-​
-Copyright(c) 2020 By Siavash Ashkiani
 ​
 This software is licensed under MIT license.
