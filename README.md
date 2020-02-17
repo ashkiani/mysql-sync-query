@@ -11,7 +11,7 @@ Extends the mysql package to
 
 ## Setup/Installation Requirements
 ​
-* Run command: npm install mysql-sync-query
+* Run command: ```npm install mysql-sync-query```
 * Declare a variable/constant to require the installed package e.g. 
 ```
 let db = require("mysql-sync-query");
