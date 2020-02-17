@@ -12,7 +12,7 @@ class Database {
     connectRemote(URL) {
         console.log("Connecting to DB");
         this.connection = mysql.createConnection(URL);
-        promisifyQuery();
+        this.promisifyQuery();
     }
     connectLocal(host,port,user,password) {
         console.log("Connecting to DB");
@@ -23,7 +23,7 @@ class Database {
             password: password,
             database: this.dbName
         });
-        promisifyQuery();
+        this.promisifyQuery();
     }
     async executeQuery(textQuery) {
         const rows = await this.query(textQuery);
