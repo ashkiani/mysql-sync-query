@@ -12,8 +12,14 @@ Extends the mysql package to
 ## Setup/Installation Requirements
 ​
 * Run command: npm install mysql-sync-query
-* Declare a variable/constant to require the installed package e.g. let db = require("mysql-sync-query");
-* The defined variable in the last step represents a class with a constructor that takes an existing database name. e.g. let databaseObject = new db("employees_db");
+* Declare a variable/constant to require the installed package e.g. 
+```
+let db = require("mysql-sync-query");
+```
+* The defined variable in the last step represents a class with a constructor that takes an existing database name. e.g. 
+```
+let databaseObject = new db("employees_db");
+```
 
 ## Methods
 #### connectLocal
@@ -27,12 +33,12 @@ Parameters:
 #### connectRemote
 Connects Node to an existing remote MySQL server.
 Parameters:
-* URL - e.g. process.env.JAWSDB_URL
+* URL - e.g. ```process.env.JAWSDB_URL```
 
 #### executeQuery
 Executes the input query and returns the affected rows
 Parameters:
-* textQuery - the SQL query string e.g. "SELECT * FROM table_name"
+* textQuery - the SQL query string e.g. ```"SELECT * FROM table_name"```
 Returns:
 * a JSON object that contains database records.
 
@@ -40,7 +46,7 @@ Returns:
 Terminates the connection.​
 
 ## Example
-
+```
 const db = require("mysql-sync-query");  
 const dbObj = new db("employees_db");  
 
@@ -59,7 +65,7 @@ async function start() {
 }  
   
 start();  
-
+```
 ## Known Bugs
 
 None - at this time​.
