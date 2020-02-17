@@ -5,9 +5,9 @@
 #### By Siavash Ashkiani
 ​
 ## Description
-Extends the mysql package to
-* 1- Promisify the database connection object. 
-* 2- Provide a method for executing queries synchronously.
+Extends the mysql package to  
+1- Promisify the database connection object.   
+2- Provide a method for executing queries synchronously.  
 
 ## Setup/Installation Requirements
 ​
@@ -41,24 +41,24 @@ Terminates the connection.​
 
 ## Example
 
-const db = require("mysql-sync-query");
-const dbObj = new db("employees_db");
+const db = require("mysql-sync-query");  
+const dbObj = new db("employees_db");  
 
-async function start() {
-    dbObj.connectLocal("localHost", 3306, "user", "password");
-    try {
-        let res = await dbObj.executeQuery("SELECT * FROM employee");
-        console.log(res);
-    }
-    catch (err) {
-        console.log(err);
-    }
-    finally {
-        dbObj.disconnect();
-    }
-}
-
-start();
+async function start() {  
+    dbObj.connectLocal("localHost", 3306, "user", "password");  
+    try {  
+        let res = await dbObj.executeQuery("SELECT * FROM employee");  
+        console.log(res);  
+    }  
+    catch (err) {  
+        console.log(err);  
+    }  
+    finally {  
+        dbObj.disconnect();  
+    }  
+}  
+  
+start();  
 
 ## Known Bugs
 
