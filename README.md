@@ -36,10 +36,10 @@ Parameters:
 * URL - e.g. ```process.env.JAWSDB_URL```
 
 #### executeQuery
-Executes the input query and returns the affected rows
-Parameters:
-* textQuery - the SQL query string e.g. ```"SELECT * FROM table_name"```
-Returns:
+Executes the input query and returns the affected rows  
+Parameters:  
+* textQuery - the SQL query string e.g. ```"SELECT * FROM table_name"```  
+Returns:  
 * a JSON object that contains database records.
 
 #### disconnect
